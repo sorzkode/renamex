@@ -1,3 +1,4 @@
+[![CodeQL](https://github.com/sorzkode/renamex/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/sorzkode/renamex/actions/workflows/codeql-analysis.yml)
 [[PyPI Package](https://pypi.org/project/renamex/)]
 [[MIT Licence](https://en.wikipedia.org/wiki/MIT_License)]
 
