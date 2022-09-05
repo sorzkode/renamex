@@ -31,11 +31,11 @@ Installation isn't required to run the script but you will need to ensure the re
 
 ## Requirements
 
-  Python 3
+  [[Python 3](https://www.python.org/downloads/)]
 
-  pyfiglet module 
+  [[pyfiglet module](https://pypi.org/project/pyfiglet/)]
 
-  click module
+  [[click module](https://pypi.org/project/click/)]
 
 ## Usage
 
