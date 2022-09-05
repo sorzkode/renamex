@@ -1,0 +1,8 @@
+License.md
+README.md
+setup.py
+renamex.egg-info/PKG-INFO
+renamex.egg-info/SOURCES.txt
+renamex.egg-info/dependency_links.txt
+renamex.egg-info/requires.txt
+renamex.egg-info/top_level.txt
