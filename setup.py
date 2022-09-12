@@ -8,7 +8,7 @@ setuptools.setup(
     author='sorzkode',
     author_email='<sorzkode@proton.me>',
     packages=setuptools.find_packages(),
-    install_requires=['pyfiglet', 'click'],
+    install_requires=['pyfiglet', 'click', 'tkinter'],
     long_description='Renamomicon Ex-Bulkus...the script of the dead. AKA an Evil Dead themed bulk file renaming utility.',
     classifiers=[
         'Programming Language :: Python :: 3',
