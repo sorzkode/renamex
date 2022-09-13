@@ -38,6 +38,8 @@ Installation isn't required to run the script but you will need to ensure the re
 
   [[click module](https://pypi.org/project/click/)]
 
+  [[tkinter](https://docs.python.org/3/library/tkinter.html)] :: Linux Users
+
 ## Usage
 
 ```
