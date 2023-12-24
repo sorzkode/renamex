@@ -1,13 +1,16 @@
 Metadata-Version: 2.1
 Name: renamex
-Version: 1.0.0
+Version: 2.0.0
 Summary: Bulk file renaming utility.
 Home-page: https://github.com/sorzkode/
-Author: sorzkode
+Author: Mister Riley
 Author-email: <sorzkode@proton.me>
 Classifier: Programming Language :: Python :: 3
-Classifier: License :: MIT
+Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 License-File: License.md
+Requires-Dist: pyfiglet
+Requires-Dist: click
+Requires-Dist: tkinter
 
 Renamomicon Ex-Bulkus...the script of the dead. AKA an Evil Dead themed bulk file renaming utility.
