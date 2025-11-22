@@ -1,0 +1,87 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "renamex"
+version = "2.1.0"
+description = "Renamomicon Ex-Bulkus - An Evil Dead themed bulk file renaming utility"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Sorzkode", email = "sorzkode@proton.me" }
+]
+keywords = ["rename", "bulk", "files", "cli", "utility"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Filesystems",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "click>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+build = [
+    "pyinstaller>=6.0.0",
+]
+
+[project.scripts]
+renamex = "renamex:main"
+
+[project.urls]
+Homepage = "https://github.com/sorzkode/renamex"
+Repository = "https://github.com/sorzkode/renamex"
+Issues = "https://github.com/sorzkode/renamex/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+only-include = ["renamex.py"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "renamex.py",
+    "README.md",
+    "LICENSE.md",
+    "pyproject.toml",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310", "py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=renamex --cov-report=term-missing"
