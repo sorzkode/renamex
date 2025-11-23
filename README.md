@@ -20,10 +20,7 @@ The script of the dead...AKA an Evil Dead themed bulk renaming utility.
 
 ## Installation
 
-Install from PyPI:
-```bash
-pip install renamex
-```
+Install the .exe from releases
 
 Or install from source:
 ```bash
